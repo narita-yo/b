@@ -1,0 +1,85 @@
+/* Stylesheet for Luxeritas design file (AMP) */
+
+/*
+------------------------------------
+ Title
+------------------------------------ */
+.entry-title, #front-page-title {
+	padding: 0 5px;
+}
+.post h2, .post h3 {
+	position: relative;
+	border: 0;
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+.post h2::after, .post h3::after {
+	position: absolute;
+	top: 0;
+	content: "";
+	background: #00a0dd;
+}
+.post h2 {
+	padding: .35em 1.2em;
+}
+.post h2::after {
+	left: 0;
+	width: 10px;
+	height: 100%;
+	border-radius: 3px;
+}
+#front-page-title::after {
+	content: none;
+}
+
+.post h3 {
+	padding: .2em 1.2em;
+}
+.post h3::after {
+	left: .4em;
+	width: 6px;
+	height: 100%;
+	border-radius: 4px;
+}
+.post h4 {
+	border-left-color: #00a0dd;
+}
+.meta, .post .meta {
+	padding: 16px 5px;
+	border-top: 3px solid #00a0dd;
+}
+.post .meta-u {
+	padding: 0;
+	border-top: 0;
+}
+.pbhr {
+	border-top-color: #00a0dd;
+}
+
+/*
+------------------------------------
+ Pagination
+------------------------------------ */
+.pagination>.active>span, .pagination>li>a:hover {
+	background: #00a0dd;
+	border-color: #00a0dd;
+}
+
+/*
+------------------------------------
+ SNS
+------------------------------------ */
+.sns-msg h2 {
+	border-bottom-color: #00a0dd;
+}
+
+/*
+------------------------------------
+ Sidebar
+------------------------------------ */
+/* Side Title */
+#side h3, #side h4, #foot-in h4 {
+    border-left: 8px solid #00a0dd;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}

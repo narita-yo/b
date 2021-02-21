@@ -1,0 +1,166 @@
+/* Stylesheet for Luxeritas design file */
+
+/*
+------------------------------------
+ List
+------------------------------------ */
+#list div[id^=tile-] .term, #list div[id^=tile-] .term a, #list div[id^=tile-] .term img {
+	display: block;
+	margin: auto;
+}
+#list div[id^=tile-] .term img:hover {
+	transform: scale(1.1);
+}
+div[id^=tile-] h2 {
+	margin: 15px;
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: bold;
+}
+div[id^=tile-] .meta {
+	padding: 15px 15px 0;
+	border: 0;
+}
+#list div[id^=tile-] .exsp {
+	display: block;
+	padding: 10px 15px 20px;
+}
+div[id^=tile-] .meta .category a:first-child {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	min-width: 150px;
+	padding: 7px;
+	border: 0;
+	color: #fff;
+	background: #00a0dd;
+	box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.4);
+	opacity: .9;
+	font-size: 12px; font-size: 1.2rem;
+	text-align: center;
+	text-decoration: none;
+	pointer-events: none;
+}
+div[id^=tile-] .meta i.fa-folder {
+	display: none;
+}
+#list div[id^=tile-] .read-more {
+	bottom: 30px;
+}
+.read-more a {
+	padding: .5em 2em;
+	color: #999;
+	border: 1px solid #ddd;
+	text-decoration: none;
+}
+.read-more a:hover {
+	opacity: .6;
+}
+
+@media (min-width: 576px) {
+	div[id^=tile-] .toc:not(#bottom-area):not(.posts-list-middle-widget):not(#bottom-area):not(.posts-list-under-widget) {
+		padding: 0 0 20px 0;
+	}
+	#list div[id^=tile-] .term img {
+		border: 0;
+	}
+	#list div[id^=tile-] .term {
+		max-height: 230px;
+		overflow: hidden;
+		border-bottom: 1px solid #a0d8ef;
+	}
+}
+@media (max-width: 575px) {
+	div[id^=tile-] .meta .category a:first-child {
+		top: 10px;
+		left: 20px;
+	}
+	#list .read-more-link {
+		display: block;
+		padding: 1.0em 2em;
+		border-radius: 0;
+	}
+}
+
+/*
+------------------------------------
+ Title
+------------------------------------ */
+.entry-title, #front-page-title {
+	padding: 0 5px;
+}
+.post h2, .post h3 {
+	position: relative;
+	border: 0;
+	margin-top: 40px;
+	margin-bottom: 35px;
+}
+.post h2::after, .post h3::after {
+	position: absolute;
+	top: 0;
+	content: "";
+	background: #00a0dd;
+}
+.post h2 {
+	padding: .35em 1.2em;
+}
+.post h2::after {
+	left: 0;
+	width: 10px;
+	height: 100%;
+	border-radius: 3px;
+}
+#front-page-title::after {
+	content: none;
+}
+
+.post h3 {
+	padding: .2em 1.2em;
+}
+.post h3::after {
+	left: .4em;
+	width: 6px;
+	height: 100%;
+	border-radius: 4px;
+}
+.post h4 {
+	border-left-color: #00a0dd;
+}
+.meta, .post .meta {
+	padding: 16px 5px;
+	border-top: 3px solid #00a0dd;
+}
+.post .meta-u {
+	padding: 0;
+	border-top: 0;
+}
+.pbhr {
+	border-top-color: #00a0dd;
+}
+
+/*
+------------------------------------
+ Pagination
+------------------------------------ */
+.pagination>.active>span, .pagination>li>a:hover {
+	background: #00a0dd;
+	border-color: #00a0dd;
+}
+
+/*
+------------------------------------
+ SNS
+------------------------------------ */
+.sns-msg h2 {
+	border-bottom-color: #00a0dd;
+}
+
+/*
+------------------------------------
+ Sidebar
+------------------------------------ */
+/* Side Title */
+#side h3, #side h4, #foot-in h4 {
+    border-left: 8px solid #00a0dd;
+    padding-left: 12px;
+    margin-bottom: 30px;
+}
